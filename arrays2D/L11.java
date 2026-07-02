@@ -25,8 +25,9 @@ public class L11 {
 
 //        stateOfWakanda2(arr);
 
-        System.out.println(saddlePrice(arr));
+//        System.out.println(saddlePrice(arr));
 
+        searchArr(arr,22);
     }
 
     public static void display(int[][] arr){
@@ -116,4 +117,25 @@ public class L11 {
         return -1;  //invalid input
     }
 
+
+//    Search in a Sorted 2D Array
+    public static void searchArr(int[][] arr, int data){
+        int n=arr.length;
+        int m=arr[0].length;
+
+        int i=n-1,j=0;
+
+        while(i>=0 && j<m){
+            if(arr[i][j]==data){
+                System.out.println(i+" "+j);
+                return;
+            }
+            else if(arr[i][j]<data){
+                j++;
+            }
+            else{
+                i--;
+            }
+        }
+    }
 }
