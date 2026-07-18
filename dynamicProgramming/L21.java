@@ -11,7 +11,7 @@ public class L21 {
 
 //        System.out.println(fib(n,dp));
 
-        System.out.println(fibTab(n));
+//        System.out.println(fibTab(n));
     }
 
 
