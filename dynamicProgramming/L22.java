@@ -28,7 +28,6 @@ public class L22 {
                     };
         int[][] dp=new int[arr.length][arr[0].length];
         System.out.println(minCostInMazeTraversal(arr, 0, 0, dp));
-        System.out.println(minCostInMazeTraversalTabulation(arr,0,0));
     }
 
 
